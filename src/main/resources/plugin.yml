@@ -1,0 +1,5 @@
+name: PlsWorkLol
+version: '${project.version}'
+main: me.excugaming.serverplugin.main.Main
+api-version: 1.19
+authors: [ ExCUgaming, CodeWizard85 ]
