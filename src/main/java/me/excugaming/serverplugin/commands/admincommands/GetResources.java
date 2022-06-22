@@ -20,9 +20,30 @@ public class GetResources implements CommandExecutor {
                         if (args[0].equals("iron")) {
                             player.getInventory().addItem(Items.iron);
                         }
+                        if (args[0].equals("gold")) {
+                            player.getInventory().addItem(Items.gold);
+                        }
+                        if (args[0].equals("diamond")) {
+                            player.getInventory().addItem(Items.diamond);
+                        }
+                        if (args[0].equals("netherite")) {
+                            player.getInventory().addItem(Items.netherite);
+                        }
+                        if (args[0].equals("lapis")) {
+                            player.getInventory().addItem(Items.lapis);
+                        }
+                        if (args[0].equals("redstone")) {
+                            player.getInventory().addItem(Items.redstone);
+                        }
+                        if (args[0].equals("emerald")) {
+                            player.getInventory().addItem(Items.emerald);
+                        }
                     } else {
                         player.sendMessage(ChatColor.RED+"Invalid usage of command.  Usage: /getresources <resource>");
                     }
+                } else {
+                    Player player = (Player) sender;
+                    player.sendMessage(ChatColor.RED+"You cannot run this command.");
                 }
             }
         }
